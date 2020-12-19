@@ -83,7 +83,7 @@ hr {
   margin-left: -12px;
   border: 5px solid #fff;
   border-radius: 20px;
-  background: #45aed6;
+  background: #f79225;
 }
 .btn {
   border-width: 0;
@@ -91,12 +91,12 @@ hr {
   border-radius: 3px;
 }
 .btn.btn-primary {
-  background: #45aed6;
-  border-color: #2a95be;
+  background: #f79225;
+  border-color: #d17b1f;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background: #2a95be;
+  background: #d17b1f;
 }
 .column-title {
   margin-top: 0;
@@ -181,7 +181,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 37px;
-    border-top: 3px solid #45aed6;
+    border-top: 3px solid #0e507d;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -245,7 +245,7 @@ ul.nostyle i {
   color: #fff;
 }
 #main-slider .slider-inner h2 > span {
-  color: #45aed6;
+  color: #f79225;
 }
 #main-slider .slider-inner .btn {
   margin-top: 10px;
@@ -270,7 +270,7 @@ ul.nostyle i {
 }
 #main-slider .owl-prev:hover,
 #main-slider .owl-next:hover {
-  background-color: #45aed6;
+  background-color: #505a27;
 }
 #main-slider .owl-prev {
   left: -35px;
@@ -284,7 +284,7 @@ ul.nostyle i {
   width: 0%;
   max-width: 100%;
   height: 4px;
-  background: #45aed6;
+  background: #f79225;
 }
 #progressBar {
   margin-top: -4px;
@@ -939,4 +939,8 @@ ul.nostyle i {
 .myLogo{
   max-height: 130px;
   max-width: 130px;
+}
+
+.vision{
+  color: #505a27;
 }
