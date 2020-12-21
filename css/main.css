@@ -24,7 +24,7 @@ h5,
 h6 {
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
-  color: #272727;
+  color: #505a27;
 }
 a {
   color: #45aed6;
@@ -57,7 +57,7 @@ hr {
 }
 .section-header .section-title {
   font-size: 44px;
-  color: #272727;
+  color: #505a27;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 20px;
@@ -304,10 +304,12 @@ ul.nostyle i {
   margin-top: 40px;
 }
 #cta2 {
-  background: #242a33 url(../images/cta2/cta2-bg.jpg) no-repeat 50% 50%;
+  /* background: #242a33 url(../images/cta2/cta2-bg.jpg) no-repeat 50% 50%; */
   background-size: cover;
   color: #fff;
   padding-top: 70px;
+  background-color: #f79225 ;
+  padding-bottom: 100px;
 }
 #cta2 .btn {
   margin-top: 10px;
@@ -320,13 +322,13 @@ ul.nostyle i {
 #cta2 h2 > span {
   color: #45aed6;
 }
-#features {
+#coreValues {
   padding: 100px 0;
 }
-#features .media.service-box:first-child {
+#coreValues .media.service-box:first-child {
   margin-top: 80px;
 }
-#services {
+#activities {
   padding: 100px 0 75px;
 }
 .media.service-box {
@@ -391,10 +393,10 @@ ul.nostyle i {
 }
 #portfolio .portfolio-filter > li a:hover,
 #portfolio .portfolio-filter > li a.active {
-  background: #45aed6;
+  background: #505a27;
   color: #fff;
-  box-shadow: 0 -3px 0 0 #318daf inset;
-  -webkit-box-shadow: 0 -3px 0 0 #318daf inset;
+  box-shadow: 0 -3px 0 0 #3e461e inset;
+  -webkit-box-shadow: 0 -3px 0 0 #3e461e inset;
 }
 #portfolio .portfolio-filter > li a.active:after {
   content: " ";
@@ -404,7 +406,7 @@ ul.nostyle i {
   margin-left: -10px;
   border-width: 10px;
   border-style: solid;
-  border-color: #318daf transparent transparent transparent;
+  border-color: #3e461e transparent transparent transparent;
 }
 #portfolio .portfolio-filter > li:first-child a {
   border-radius: 4px 0 0 4px;
@@ -451,9 +453,9 @@ ul.nostyle i {
   top: -18px;
   right: 12px;
   border-radius: 50%;
-  background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-  background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-  background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  background-image: -moz-linear-gradient(90deg, #0e507d 0%, #0e507d 100%);
+  background-image: -webkit-linear-gradient(90deg, #0e507d 0%, #0e507d 100%);
+  background-image: -ms-linear-gradient(90deg, #0e507d 0%, #0e507d 100%);
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -943,4 +945,8 @@ ul.nostyle i {
 
 .vision{
   color: #505a27;
+}
+
+.img-responsive{
+  /* max-height: 500px; */
 }
