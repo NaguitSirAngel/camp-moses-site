@@ -309,8 +309,26 @@ ul.nostyle i {
   color: #fff;
   padding-top: 70px;
   background-color: #f79225 ;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
+#cta2Green {
+  /* background: #242a33 url(../images/cta2/cta2-bg.jpg) no-repeat 50% 50%; */
+  background-size: cover;
+  color: #fff;
+  padding-top: 70px;
+  background-color: #505a27 ;
+  padding-bottom: 70px;
+}
+
+#cta2Green .btn {
+  margin-top: 10px;
+}
+#cta2Green h2 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+}
+
 #cta2 .btn {
   margin-top: 10px;
 }
@@ -949,4 +967,15 @@ ul.nostyle i {
 
 .img-responsive{
   /* max-height: 500px; */
+}
+.carousel-content{
+  /* margin-top: 0px; */
+}
+
+@media (max-width: 480px) 
+{
+  .bannerP
+    {
+        display: none;
+    }
 }
