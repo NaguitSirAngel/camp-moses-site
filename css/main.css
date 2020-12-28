@@ -432,10 +432,10 @@ ul.nostyle i {
 #cottages .portfolio-filter > li:last-child a {
   border-radius: 0 4px 4px 0;
 }
-#cottages .portfolio-items {
+#cottages .row .portfolio-items {
   margin: -15px;
 }
-#cottages .portfolio-item {
+#cottages .row .portfolio-item {
   width: 24.9%;
   float: left;
   padding: 15px;
@@ -445,10 +445,10 @@ ul.nostyle i {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-#cottages .portfolio-item .portfolio-item-inner {
+#cottages .row .portfolio-item .portfolio-item-inner {
   position: relative;
 }
-#cottages .portfolio-item .portfolio-item-inner .portfolio-info {
+#cottages .row .portfolio-item .portfolio-item-inner .portfolio-info {
   opacity: 0;
   transition: opacity 400ms;
   -webkit-transition: opacity 400ms;
@@ -460,13 +460,13 @@ ul.nostyle i {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
-#cottages .portfolio-item .portfolio-item-inner .portfolio-info h3 {
+#cottages .row .portfolio-item .portfolio-item-inner .portfolio-info h3 {
   font-size: 16px;
   line-height: 1;
   margin: 0;
   color: #fff;
 }
-#cottages .portfolio-item .portfolio-item-inner .portfolio-info .preview {
+#cottages .row .portfolio-item .portfolio-item-inner .portfolio-info .preview {
   position: absolute;
   top: -18px;
   right: 12px;
@@ -482,7 +482,7 @@ ul.nostyle i {
   box-shadow: 0 0 0 2px #fff;
   -webkit-box-shadow: 0 0 0 2px #fff;
 }
-#cottages .portfolio-item:hover .portfolio-info {
+#cottages .row .portfolio-item:hover .portfolio-info {
   opacity: 1;
 }
 /* Start: Recommended Isotope styles */
@@ -978,4 +978,7 @@ ul.nostyle i {
     {
         display: none;
     }
+}
+.myImg{
+  max-width: 150px;
 }
