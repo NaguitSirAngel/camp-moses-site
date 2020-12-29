@@ -329,6 +329,24 @@ ul.nostyle i {
   line-height: 1;
 }
 
+#cta2Blue {
+  /* background: #242a33 url(../images/cta2/cta2-bg.jpg) no-repeat 50% 50%; */
+  background-size: cover;
+  color: #fff;
+  padding-top: 70px;
+  background-color: #0e507d ;
+  padding-bottom: 70px;
+}
+
+#cta2Blue .btn {
+  margin-top: 10px;
+}
+#cta2Blue h2 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+}
+
 #cta2 .btn {
   margin-top: 10px;
 }
@@ -793,10 +811,10 @@ ul.nostyle i {
   color: #fff;
 }
 #get-in-touch {
-  padding: 100px 0 50px;
-  background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-  background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-  background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  padding: 90px 0 50px;
+  background-image: -moz-linear-gradient(90deg, #505a27 0%, #505a27 100%);
+  background-image: -webkit-linear-gradient(90deg, #505a27 0%, #505a27 100%);
+  background-image: -ms-linear-gradient(90deg, #505a27 0%, #505a27 100%);
   color: #fff;
 }
 #get-in-touch h1,
@@ -930,7 +948,7 @@ ul.nostyle i {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #2e2e2e;
+  background: #505a27;
 }
 #footer a {
   color: #fff;
@@ -982,3 +1000,11 @@ ul.nostyle i {
 .myImg{
   max-width: 150px;
 }
+
+.contactPhoto{
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  }
