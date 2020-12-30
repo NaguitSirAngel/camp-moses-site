@@ -1,32 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Camp Moses</title>
-    <!-- core CSS -->
-   
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.transitions.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+    <head>
+        <style>
+            .dismissButton {
+                background-color: #fff;
+                border: 1px solid #dadce0;
+                color: #1a73e8;
+                border-radius: 4px;
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                height: 36px;
+                cursor: pointer;
+                padding: 0 24px
+            }
+    
+            .dismissButton:hover {
+                background-color: rgba(66, 133, 244, 0.04);
+                border: 1px solid #d2e3fc
+            }
+    
+            .dismissButton:focus {
+                background-color: rgba(66, 133, 244, 0.12);
+                border: 1px solid #d2e3fc;
+                outline: 0
+            }
+    
+            .dismissButton:hover:focus {
+                background-color: rgba(66, 133, 244, 0.16);
+                border: 1px solid #d2e2fd
+            }
+    
+            .dismissButton:active {
+                background-color: rgba(66, 133, 244, 0.16);
+                border: 1px solid #d2e2fd;
+                box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+            }
+    
+            .dismissButton:disabled {
+                background-color: #fff;
+                border: 1px solid #f1f3f4;
+                color: #3c4043
+            }
+        </style>
+        <style>
+            .gm-style .gm-style-mtc label,
+            .gm-style .gm-style-mtc div {
+                font-weight: 400
+            }
+    
+            .gm-style .gm-style-mtc ul,
+            .gm-style .gm-style-mtc li {
+                box-sizing: border-box
+            }
+        </style>
+        <style>
+            .gm-control-active>img {
+                box-sizing: content-box;
+                display: none;
+                left: 50%;
+                pointer-events: none;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%)
+            }
+    
+            .gm-control-active>img:nth-child(1) {
+                display: block
+            }
+    
+            .gm-control-active:hover>img:nth-child(1),
+            .gm-control-active:active>img:nth-child(1) {
+                display: none
+            }
+    
+            .gm-control-active:hover>img:nth-child(2),
+            .gm-control-active:active>img:nth-child(3) {
+                display: block
+            }
+        </style>
+        <link type="text/css" rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+        <style>
+            .gm-ui-hover-effect {
+                opacity: .6
+            }
+    
+            .gm-ui-hover-effect:hover {
+                opacity: 1
+            }
+        </style>
+        <style>
+            .gm-style .gm-style-cc span,
+            .gm-style .gm-style-cc a,
+            .gm-style .gm-style-mtc div {
+                font-size: 10px;
+                box-sizing: border-box
+            }
+        </style>
+        <style>
+            @media print {
+    
+                .gm-style .gmnoprint,
+                .gmnoprint {
+                    display: none
+                }
+            }
+    
+            @media screen {
+    
+                .gm-style .gmnoscreen,
+                .gmnoscreen {
+                    display: none
+                }
+            }
+        </style>
+        <style>
+            .gm-style-pbc {
+                transition: opacity ease-in-out;
+                background-color: rgba(0, 0, 0, 0.45);
+                text-align: center
+            }
+    
+            .gm-style-pbt {
+                font-size: 22px;
+                color: white;
+                font-family: Roboto, Arial, sans-serif;
+                position: relative;
+                margin: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%)
+            }
+        </style>
+        <style>
+            .gm-style img {
+                max-width: none;
+            }
+    
+            .gm-style {
+                font: 400 11px Roboto, Arial, sans-serif;
+                text-decoration: none;
+            }
+        </style>
+        <title>Free CSS | Free CSS Templates | Demo of the HTML CSS Template Multi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.transitions.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="shortcut icon" href="assets/images/ico/favicon.ico">
+        <style type="text/css">
+            #freecssfooter {
+                display: block;
+                width: 100%;
+                padding: 120px 0 20px;
+                overflow: hidden;
+                background-color: transparent;
+                z-index: 5000;
+                text-align: center;
+            }
+    
+            #freecssfooter div#fcssholder div {
+                display: none;
+            }
+    
+            #freecssfooter div#fcssholder div:first-child {
+                display: block;
+            }
+    
+            #freecssfooter div#fcssholder div:first-child a {
+                float: none;
+                margin: 0 auto;
+            }
+        </style>
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" async="" src="//s3.buysellads.com/ac/bsa.js"></script>
+        <script type="text/javascript" id="_bsap_js_b893e54e42ad5b76e7b252f59be18e67"
+            src="//s3.buysellads.com/r/s_b893e54e42ad5b76e7b252f59be18e67.js?v=1609365600000" async="async"></script>
+        <script type="text/javascript" src="//s3.buysellads.com/ac/pro.js" id="_bsap_premium_pro"></script>
+        <script type="text/javascript" id="_bsaPRO_js" src="//srv.buysellads.com/ads/get/ids/CV7DP2T/?r=1609365600000"
+            async="async"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/common.js"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/util.js"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/map.js"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/marker.js"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/onion.js"></script>
+        <script type="text/javascript" charset="UTF-8"
+            src="https://maps.google.com/maps-api-v3/api/js/43/3/controls.js"></script>
+    </head>
 
 <body id="home" class="homepage">
 
@@ -664,13 +835,8 @@
     </footer><!--/#footer-->
 
     <script src="js/jquery.js"></script>
-    
-    <script src="jquery-3.5.1.min.js"></script>
-
-
-
-
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/mousescroll.js"></script>
     <script src="js/smoothscroll.js"></script>
