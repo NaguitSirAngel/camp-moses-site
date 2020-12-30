@@ -98,6 +98,20 @@ hr {
 .btn.btn-primary:focus {
   background: #d17b1f;
 }
+.btn {
+  border-width: 0;
+  border-bottom-width: 3px;
+  border-radius: 3px;
+}
+.btn.btn-secondary {
+  background: #505a27;
+  border-color: #3f471f;
+  color: white;
+}
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+  background: #3f471f;
+}
 .column-title {
   margin-top: 0;
   padding-bottom: 15px;
@@ -362,6 +376,12 @@ ul.nostyle i {
   padding: 100px 0;
 }
 #coreValues .media.service-box:first-child {
+  margin-top: 80px;
+}
+#introAbout {
+  padding: 100px 0;
+}
+#introAbout .media.service-box:first-child {
   margin-top: 80px;
 }
 #activities {
@@ -811,7 +831,7 @@ ul.nostyle i {
   color: #fff;
 }
 #get-in-touch {
-  padding: 90px 0 50px;
+  padding: 50px 0 10px;
   background-image: -moz-linear-gradient(90deg, #505a27 0%, #505a27 100%);
   background-image: -webkit-linear-gradient(90deg, #505a27 0%, #505a27 100%);
   background-image: -ms-linear-gradient(90deg, #505a27 0%, #505a27 100%);
