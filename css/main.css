@@ -378,6 +378,12 @@ ul.nostyle i {
 #coreValues .media.service-box:first-child {
   margin-top: 80px;
 }
+#info {
+  padding: 100px 0;
+}
+#info .media.service-box:first-child {
+  margin-top: 80px;
+}
 #introAbout {
   padding: 100px 0;
 }
