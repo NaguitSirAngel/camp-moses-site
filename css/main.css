@@ -1034,3 +1034,27 @@ ul.nostyle i {
   margin-left: auto;
   margin-bottom: 30px;
   }
+
+#mobileView{
+    width: 250px; 
+    margin-right: auto; 
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: none;
+  }
+#mobileViewh4{
+  display: none;
+}
+
+@media (max-width: 750px) {
+  #desktopView{
+    display: none;
+  }
+  #mobileView{
+    display: block;
+  }
+  #mobileViewh4{
+    display: block;
+  }
+}
