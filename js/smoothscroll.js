@@ -96,29 +96,29 @@ function ssc_scrollArray(e, t, n, r) {
   ssc_pending = true
 }
 
-function ssc_wheel(e) {
-  if (!ssc_initdone) {
-    ssc_init()
-  }
-  var t = e.target;
-  var n = ssc_overflowingAncestor(t);
-  if (!n || e.defaultPrevented || ssc_isNodeName(ssc_activeElement, "embed") || ssc_isNodeName(t, "embed") && /\.pdf/i.test(t.src)) {
-    return true
-  }
-  var r = e.wheelDeltaX || 0;
-  var i = e.wheelDeltaY || 0;
-  if (!r && !i) {
-    i = e.wheelDelta || 0
-  }
-  if (Math.abs(r) > 1.2) {
-    r *= ssc_stepsize / 120
-  }
-  if (Math.abs(i) > 1.2) {
-    i *= ssc_stepsize / 120
-  }
-  ssc_scrollArray(n, -r, -i);
-  e.preventDefault()
-}
+// function ssc_wheel(e) {
+//   if (!ssc_initdone) {
+//     ssc_init()
+//   }
+//   var t = e.target;
+//   var n = ssc_overflowingAncestor(t);
+//   if (!n || e.defaultPrevented || ssc_isNodeName(ssc_activeElement, "embed") || ssc_isNodeName(t, "embed") && /\.pdf/i.test(t.src)) {
+//     return true
+//   }
+//   var r = e.wheelDeltaX || 0;
+//   var i = e.wheelDeltaY || 0;
+//   if (!r && !i) {
+//     i = e.wheelDelta || 0
+//   }
+//   if (Math.abs(r) > 1.2) {
+//     r *= ssc_stepsize / 120
+//   }
+//   if (Math.abs(i) > 1.2) {
+//     i *= ssc_stepsize / 120
+//   }
+//   ssc_scrollArray(n, -r, -i);
+//   e.preventDefault()
+// }
 
 function ssc_keydown(e) {
   var t = e.target;
