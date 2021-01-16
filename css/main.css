@@ -85,6 +85,39 @@ hr {
   border-radius: 20px;
   background: #f79225;
 }
+.section-header2 {
+  margin-bottom: 0px;
+}
+.section-header2 .section-title {
+  font-size: 44px;
+  color: #505a27;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+}
+.section-header2 .section-title:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: 1px;
+  background: #ebebeb;
+}
+.section-header2 .section-title:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background: #f79225;
+}
 .btn {
   border-width: 0;
   border-bottom-width: 3px;
