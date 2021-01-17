@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   color: #64686d;
   line-height: 26px;
+  font-size: 15px;
 }
 h1,
 h2,
@@ -673,7 +674,7 @@ ul.nostyle i {
   margin-bottom: 50px;
 }
 #meet-team {
-  padding: 100px 0;
+  padding: 100px 0px 0px 0px;
 }
 #meet-team .team-member {
   padding: 13px;
@@ -691,10 +692,10 @@ ul.nostyle i {
   margin-bottom: 10px;
 }
 #meet-team .team-member:hover {
-  border-color: #45aed6;
+  border-color: #f79225;
 }
 #meet-team .team-member:hover .social-icons > li > a {
-  background: #45aed6;
+  background: #f79225;
 }
 #meet-team .social-icons {
   list-style: none;
