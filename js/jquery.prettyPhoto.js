@@ -63,13 +63,13 @@
           } else {
             $pp_pic_holder.find(".pp_hoverContainer").hide();
           }
-          if (settings.allow_expand) {
-            if (a["resized"]) {
-              e("a.pp_expand,a.pp_contract").show();
-            } else {
-              e("a.pp_expand").hide();
-            }
-          }
+          // if (settings.allow_expand) {
+          //   if (a["resized"]) {
+          //     e("a.pp_expand,a.pp_contract").show();
+          //   } else {
+          //     e("a.pp_expand").hide();
+          //   }
+          // }
           if (settings.autoplay_slideshow && !m && !f)
             e.prettyPhoto.startSlideshow();
           settings.changepicturecallback();
@@ -349,21 +349,21 @@
         e.prettyPhoto.close();
         return false;
       });
-      if (settings.allow_expand) {
-        e("a.pp_expand").bind("click", function (t) {
-          if (e(this).hasClass("pp_expand")) {
-            e(this).removeClass("pp_expand").addClass("pp_contract");
-            doresize = false;
-          } else {
-            e(this).removeClass("pp_contract").addClass("pp_expand");
-            doresize = true;
-          }
-          y(function () {
-            e.prettyPhoto.open();
-          });
-          return false;
-        });
-      }
+      // if (settings.allow_expand) {
+      //   e("a.pp_expand").bind("click", function (t) {
+      //     if (e(this).hasClass("pp_expand")) {
+      //       e(this).removeClass("pp_expand").addClass("pp_contract");
+      //       doresize = false;
+      //     } else {
+      //       e(this).removeClass("pp_contract").addClass("pp_expand");
+      //       doresize = true;
+      //     }
+      //     y(function () {
+      //       e.prettyPhoto.open();
+      //     });
+      //     return false;
+      //   });
+      // }
       $pp_pic_holder
         .find(".pp_previous, .pp_nav .pp_arrow_previous")
         .bind("click", function () {
@@ -390,7 +390,7 @@
         opacity: 0.8,
         show_title: true,
         allow_resize: true,
-        allow_expand: true,
+        // allow_expand: true,
         default_width: 500,
         default_height: 344,
         counter_separator_label: "/",
@@ -408,7 +408,7 @@
         callback: function () {},
         ie6_fallback: true,
         markup:
-          '<div class="pp_pic_holder"> 						<div class="ppt"> </div> 						<div class="pp_top"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 						<div class="pp_content_container"> 							<div class="pp_left"> 							<div class="pp_right"> 								<div class="pp_content"> 									<div class="pp_loaderIcon"></div> 									<div class="pp_fade"> 										<a href="#" class="pp_expand" title="Expand the image">Expand</a> 										<div class="pp_hoverContainer"> 											<a class="pp_next" href="#">next</a> 											<a class="pp_previous" href="#">previous</a> 										</div> 										<div id="pp_full_res"></div> 										<div class="pp_details"> 											<div class="pp_nav"> 												<a href="#" class="pp_arrow_previous">Previous</a> 												<p class="currentTextHolder">0/0</p> 												<a href="#" class="pp_arrow_next">Next</a> 											</div> 											<p class="pp_description"></p> 											<div class="pp_social">{pp_social}</div> 											<a class="pp_close" href="#">Close</a> 										</div> 									</div> 								</div> 							</div> 							</div> 						</div> 						<div class="pp_bottom"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 					</div> 					<div class="pp_overlay"></div>',
+          '<div class="pp_pic_holder"> 						<div class="ppt"> </div> 						<div class="pp_top"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 						<div class="pp_content_container"> 							<div class="pp_left"> 							<div class="pp_right"> 								<div class="pp_content"> 									<div class="pp_loaderIcon"></div> 									<div class="pp_fade"> 										 							<div class="pp_hoverContainer"> 											<a class="pp_next" href="#">next</a> 											<a class="pp_previous" href="#">previous</a> 										</div> 										<div id="pp_full_res"></div> 										<div class="pp_details"> 											<div class="pp_nav"> 												<a href="#" class="pp_arrow_previous">Previous</a> 												<p class="currentTextHolder">0/0</p> 												<a href="#" class="pp_arrow_next">Next</a> 											</div> 											<p class="pp_description"></p> 											<div class="pp_social">{pp_social}</div> 											<a class="pp_close" href="#">Close</a> 										</div> 									</div> 								</div> 							</div> 							</div> 						</div> 						<div class="pp_bottom"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 					</div> 					<div class="pp_overlay"></div>',
         gallery_markup:
           '<div class="pp_gallery"> 								<a href="#" class="pp_arrow_previous">Previous</a> 								<div> 									<ul> 										{gallery} 									</ul> 								</div> 								<a href="#" class="pp_arrow_next">Next</a> 							</div>',
         image_markup: '<img id="fullResImage" src="{path}" />',
@@ -738,9 +738,9 @@
       }
       rel_index = set_position;
       if (!doresize) doresize = true;
-      if (settings.allow_expand) {
-        e(".pp_contract").removeClass("pp_contract").addClass("pp_expand");
-      }
+      // if (settings.allow_expand) {
+      //   e(".pp_contract").removeClass("pp_contract").addClass("pp_expand");
+      // }
       y(function () {
         e.prettyPhoto.open();
       });
