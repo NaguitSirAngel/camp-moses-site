@@ -28,7 +28,7 @@ h6 {
   color: #505a27;
 }
 a {
-  color: #45aed6;
+  color: white;
   -webkit-transition: color 400ms, background-color 400ms;
   -moz-transition: color 400ms, background-color 400ms;
   -o-transition: color 400ms, background-color 400ms;
@@ -37,7 +37,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #2a95be;
+  color: #f79225  ;
 }
 hr {
   border-top: 1px solid #e5e5e5;
@@ -229,7 +229,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 37px;
-    border-top: 3px solid #0e507d;
+    border-top: 3px solid #f79225;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -259,12 +259,12 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu > li.active,
   #main-menu.navbar-default .dropdown-menu > li.open,
   #main-menu.navbar-default .dropdown-menu > li:hover {
-    border-left-color: #45aed6;
+    border-left-color: #f79225;
   }
   #main-menu.navbar-default .dropdown-menu > li.active > a,
   #main-menu.navbar-default .dropdown-menu > li.open > a,
   #main-menu.navbar-default .dropdown-menu > li:hover > a {
-    color: #45aed6;
+    color: #f79225;
     background-color: transparent;
   }
 }
@@ -1021,7 +1021,7 @@ ul.nostyle i {
   color: #fff;
 }
 #footer a:hover {
-  color: #45aed6;
+  color: #f79225;
 }
 #footer ul {
   list-style: none;
@@ -1098,4 +1098,9 @@ ul.nostyle i {
   #mobileViewh4{
     display: block;
   }
+}
+
+#introButton{
+  width: 130px;
+  margin-right: 10px;
 }
