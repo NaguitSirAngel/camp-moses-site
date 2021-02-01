@@ -1105,3 +1105,10 @@ ul.nostyle i {
   width: 130px;
   margin-right: 10px;
 }
+#introVid{
+  margin-top: 80px;
+}
+.introButtons{
+  text-align: center; 
+  margin-top: 50px;
+}
