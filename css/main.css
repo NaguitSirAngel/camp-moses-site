@@ -1131,3 +1131,8 @@ i.fa {
 .collapsed ~ .panel-body {
   padding: 0;
 }
+
+#collapsible{
+  width: 250px;
+  text-align: left;
+}
