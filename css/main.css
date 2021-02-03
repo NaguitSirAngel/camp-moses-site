@@ -1113,26 +1113,7 @@ ul.nostyle i {
   margin-top: 50px;
 }
 
-.panel-heading.collapsed .fa-chevron-down,
-.panel-heading .fa-chevron-right {
-  display: none;
-}
-
-.panel-heading.collapsed .fa-chevron-right,
-.panel-heading .fa-chevron-down {
-  display: inline-block;
-}
-
-i.fa {
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.collapsed ~ .panel-body {
-  padding: 0;
-}
-
 #collapsible{
-  width: 200px;
+  width: 180px;
   text-align: left;
 }
