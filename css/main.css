@@ -1117,3 +1117,7 @@ ul.nostyle i {
   width: 180px;
   text-align: left;
 }
+
+#progress {
+  padding-bottom: 100px;
+}
